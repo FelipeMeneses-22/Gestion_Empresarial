@@ -9,9 +9,8 @@
 <body>
     <header>
         <!-- Barra de navegación -->
-         
         <nav>
-            <img src="" alt="">
+            <img src="../img/logoEmpresa.jpeg" alt="">
             <ul>
                 <li><a href="home.php">Inicio</a></li>
                 <li><a href="registrar.php">Registrar</a></li>
