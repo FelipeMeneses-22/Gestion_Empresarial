@@ -1,4 +1,4 @@
-<?php include "header.php"?>
+<?php include("template/header.php")?>
 
 <h1>Formulario de registro</h1>
 
@@ -28,4 +28,4 @@
      <input type="submit" value="Registrar" class="btn btn-primary">
 </form>
 
-<?php include "footer.php"?> 
+<?php include("template/footer.php")?> 
