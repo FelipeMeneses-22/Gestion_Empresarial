@@ -1,8 +1,8 @@
 <?php include("template/header.php")?>
 
-<h1>Formulario de registro</h1>
-
+<!-- Formulario para registrar -->
 <form action="" method="post">
+    <h2>Formulario de registro</h2>
     <!-- Nombre -->
     <div class="form-group mb-3">
         <label for="nombre" class="form-label">Nombre</label>
