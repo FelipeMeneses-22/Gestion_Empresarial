@@ -10,7 +10,8 @@
     <header>
         <!-- Barra de navegación -->
         <nav>
-            <img src="../img/logoEmpresa.jpeg" alt="">
+            <img src="../img/logoEmpresa.jpeg" alt="Logo" width="300pxs">
+            <h1>Businnes Management</h1>
             <ul>
                 <li><a href="home.php">Inicio</a></li>
                 <li><a href="registrar.php">Registrar</a></li>

@@ -1,6 +1,5 @@
 <?php include "header.php"?>
 
-
 <h1>Formulario de registro</h1>
 
 <form action="" method="post">
