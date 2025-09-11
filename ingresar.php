@@ -12,8 +12,8 @@
         <label for="password" class="form-label">Contraseña</label>
         <input type="text" name="password" id="password" placeholder="Ingresar Contraseña" class="form-control">
     </div>
-    <!-- Boton para registrar -->
-     <input type="submit" value="Registrar" class="btn btn-primary">
+    <!-- Boton para Ingresar -->
+     <input type="submit" value="Ingresar" class="btn btn-primary">
 </form>
 
 <?php include("template/footer.php")?>
