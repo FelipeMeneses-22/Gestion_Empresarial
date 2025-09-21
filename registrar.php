@@ -15,13 +15,23 @@
     </div>
     <!-- Contraseña -->
     <div class="form-group mb-3">
-        <label for="password" class="form-label">Contraseña</label>
-        <input type="text" name="password" id="password" placeholder="Ingresar Contraseña" class="form-control">
+        <label for="contrasena" class="form-label">Contraseña</label>
+        <input type="text" name="contrasena" id="contrasena" placeholder="Ingresar Contraseña" class="form-control">
     </div>
     <!-- Confirmar Contraseña -->
     <div class="form-group mb-3">
-        <label for="okPassword" class="form-label">Confirmar Contraseña</label>
-        <input type="text" name="okPassword" id="okPassword" placeholder="Confirmar Contraseña" class="form-control">
+        <label for="contrasena" class="form-label">Confirmar Contraseña</label>
+        <input type="text" name="contrasena" id="contrasena" placeholder="Confirmar Contraseña" class="form-control">
+    </div>
+
+    <!-- Espacio para seleccionar rol -->
+    <div class="form-group mb-3">
+        <label for="rol">Elige tu rol:</label>
+        <select id="rol" name="rol" class="form-control">
+            <option value="admin">Administrador</option>
+            <option value="gerente">Gerente</option>
+            <option value="asistente">Asistente</option>
+        </select>
     </div>
 
     <!-- Boton para registrar -->

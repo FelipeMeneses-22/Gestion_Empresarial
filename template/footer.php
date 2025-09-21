@@ -1,5 +1,3 @@
-<script src="/js/bootstrap.min.js"></script>
-
 <footer class="form-control center">
     <p>©Businnes Management</p>
     <ul>
@@ -9,5 +7,6 @@
     </ul>
 </footer>
 
+<script src="/js/bootstrap.min.js"></script>
 </body>
 </html>
