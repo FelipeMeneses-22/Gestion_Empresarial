@@ -1,7 +1,7 @@
 <?php include("template/header.php")?>
 
 <!-- Formulario para registrar -->
-<form action="" method="post">
+<form action="server.php" method="post">
     <h2>Formulario de registro</h2>
     <!-- Nombre -->
     <div class="form-group mb-3">
@@ -16,7 +16,7 @@
     <!-- Contraseña -->
     <div class="form-group mb-3">
         <label for="contrasena" class="form-label">Contraseña</label>
-        <input type="text" name="contrasena" id="contrasena" placeholder="Ingresar Contraseña" class="form-control">
+        <input type="password" name="contrasena" id="contrasena" placeholder="Ingresar Contraseña" class="form-control">
     </div>
     <!-- Confirmar Contraseña -->
     <div class="form-group mb-3">
