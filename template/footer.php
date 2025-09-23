@@ -1,5 +1,6 @@
 <footer class="form-control center">
     <p>©Businnes Management</p>
+    <!-- Listado de pie de pagina -->
     <ul>
         <li><a href="#">Contacto</a></li>
         <li><a href="#">Terminos de uso</a></li>

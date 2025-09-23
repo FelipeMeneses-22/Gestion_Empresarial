@@ -9,8 +9,8 @@
     </div>
     <!-- Contraseña -->
     <div class="form-group mb-3">
-        <label for="password" class="form-label">Contraseña</label>
-        <input type="text" name="password" id="password" placeholder="Ingresar Contraseña" class="form-control">
+        <label for="contrasena" class="form-label">Contraseña</label>
+        <input type="password" name="contrasena" id="contrasena" placeholder="Ingresar Contraseña" class="form-control">
     </div>
     <!-- Boton para Ingresar -->
      <input type="submit" value="Ingresar" class="btn btn-primary">

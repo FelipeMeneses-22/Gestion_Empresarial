@@ -21,7 +21,7 @@
     <!-- Confirmar Contraseña -->
     <div class="form-group mb-3">
         <label for="contrasena" class="form-label">Confirmar Contraseña</label>
-        <input type="text" name="contrasena" id="contrasena" placeholder="Confirmar Contraseña" class="form-control">
+        <input type="password" name="contrasena" id="contrasena" placeholder="Confirmar Contraseña" class="form-control">
     </div>
 
     <!-- Espacio para seleccionar rol -->
