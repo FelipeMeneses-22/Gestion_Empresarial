@@ -8,6 +8,11 @@
         <label for="nombre" class="form-label">Nombre</label>
         <input type="text" name="nombre" id="nombre" placeholder="Ingresar Nombre" class="form-control">
     </div>
+    <!-- Apellido -->
+    <div class="form-group mb-3">
+        <label for="apellido" class="form-label">Apellido</label>
+        <input type="text" name="apellido" id="apellido" placeholder="Ingresar apellido" class="form-control">
+    </div>
     <!-- Correo -->
     <div class="form-group mb-3">
         <label for="correo" class="form-label">Correo</label>

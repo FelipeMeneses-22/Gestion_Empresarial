@@ -14,10 +14,9 @@ $sql = "INSERT INTO usuarios(nombre, apellido, correo, contrasena) VALUES('$nomb
 
 # Condicional para enviar información a la base de datos
 if($conn->query($sql) === TRUE) {
-    echo "Enviado exitosamente"
+    echo "Enviado exitosamente";
 } else {
     echo "Error: " . $sql . "<br>" . $conn->error;
 }
-
 
 ?>
