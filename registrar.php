@@ -43,4 +43,4 @@
      <input type="submit" value="Registrar" class="btn btn-primary">
 </form>
 
-<?php include("template/footer.php")?> 
+<?php include("template/footer.php")?>
