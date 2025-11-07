@@ -1,7 +1,7 @@
 <?php include("template/header.php")?>
 
 <!-- Formulario para registrar -->
-<form action="server.php" method="post" >
+<form action="server.php" method="post" class="container mt-5 mb-5 p-4 border rounded shadow" style="max-width: 600px;">
     <h2>Formulario de registro</h2>
     <!-- Nombre -->
     <div class="form-group mb-3">
