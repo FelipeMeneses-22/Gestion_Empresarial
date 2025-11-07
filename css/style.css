@@ -1,3 +1,5 @@
+/* Encabezado / nav */
+
 h1 {
   color: #47525e;
 }
@@ -15,4 +17,16 @@ h1 {
 .home {
   font-size: 20px;
   font-family: Arial, sans-serif;
+}
+
+/* Footer */
+
+.footer {
+  color: #8795a8;
+}
+
+footer a {
+  color: #000000;
+  text-decoration: underline;
+  margin: 0 10px;
 }
