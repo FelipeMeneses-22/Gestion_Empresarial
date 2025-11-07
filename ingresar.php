@@ -1,6 +1,6 @@
 <?php include("template/header.php")?>
 
-<form action="validacion_Ingreso.php" method="post" class="container mt-5 mb-5 p-4 border rounded shadow" style="max-width: 600px;">
+<form action="validacion_Ingreso.php" method="post" class="container mb-5 p-4" style="max-width: 900px;">
     <h2>Formulario de ingreso</h2>
     <!-- Correo -->
     <div class="form-group mb-3">
@@ -22,7 +22,7 @@
         </select>
     </div>
     <!-- Boton para ingresar -->
-     <input type="submit" value="Ingresar" class="btn btn-primary" id="#">
+     <input type="submit" value="Ingresar" class="col-12 btn btn-primary">
 </form>
 
 <?php include("template/footer.php")?>

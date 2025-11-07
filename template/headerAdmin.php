@@ -36,8 +36,14 @@
                 <div class="collapse navbar-collapse justify-content-star mx-5" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="nav-item"><a class="nav-link" href="home.php">Inicio</a></li>
-                        <li class="nav-item"><a class="nav-link" href="registrar.php">Registrar</a></li>
-                        <li class="nav-item"><a class="nav-link" href="ingresar.php">Ingresar</a></li>
+                        <li class="nav-item"><a class="nav-link" href="registrar.php">Cambio de contraseña</a></li>
+                        <li class="nav-item"><a class="nav-link" href="ingresar.php">Salir</a></li>
+                        <select name="opciones" id="opciones">
+                            <option href="usuarios.php">Opciones</option>
+                            <option href="productos.php">Productos</option>
+                            <option href="inventario.php">Inventario</option>
+                            <option href="reportes.php">Reportes Financieros</option>
+                        </select>
                     </ul>
                 </div>
             </div>

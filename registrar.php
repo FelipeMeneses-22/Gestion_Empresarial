@@ -1,7 +1,7 @@
 <?php include("template/header.php")?>
 
 <!-- Formulario para registrar -->
-<form action="server.php" method="post" class="container mt-5 mb-5 p-4 border rounded shadow" style="max-width: 600px;">
+<form action="server.php" method="post" class="container mb-5 p-4" style="max-width: 900px;">
     <h2>Formulario de registro</h2>
     <!-- Nombre -->
     <div class="form-group mb-3">
@@ -40,7 +40,7 @@
     </div>
 
     <!-- Boton para registrar -->
-     <input type="submit" value="Registrar" class="btn btn-primary">
+     <input type="submit" value="Registrar" class="col-12 btn btn-primary">
 </form>
 
 <?php include("template/footer.php")?>
