@@ -3,20 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Boostrap --><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
     <title>Business Management </title>
+    <!-- Boostrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <!-- CSS Personalizado -->
+    <link rel="stylesheet" href="/Gestion_Empresarial/css/style.css">
 </head>
 <body>
     <header>
+        <!-- Sección superior con logo y título -->
+        <div class="container-fluid fondo1 pt-3 pb-3">
+            <div class="row align-items-center justify-content-center justify-content-md-start">
+                <div class="col-12 col-md-4 text-center text-md-end">
+                    <a href="home.php">
+                        <img src="/Gestion_Empresarial/img/buisness.png" alt="Logo" class="d-inline-block align-text-top rounded-circle logo-circle">
+                    </a>
+                </div>
+                <div class="col-md-8 text-center">
+                    <h1>Business Management</h1>
+                </div>
+            </div>
+        </div>
+
         <!-- Barra de navegación -->
-        <nav>
-            <img src="/Gestion_Empresarial/img/logoEmpresa.jpeg" alt="Logo" width="300px">
-            <h1>Businnes Management</h1>
-            <ul>
-                <li><a href="home.php">Inicio</a></li>
-                <li><a href="registrar.php">Registrar</a></li>
-                <li><a href="ingresar.php">Ingresar</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid justify-content-star">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-star mx-5" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link" href="home.php">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="registrar.php">Registrar</a></li>
+                        <li class="nav-item"><a class="nav-link" href="ingresar.php">Ingresar</a></li>
+                    </ul>
+                </div>
+            </div>
         </nav>
+
+
     </header>
     

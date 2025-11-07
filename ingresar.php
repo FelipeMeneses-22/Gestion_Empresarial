@@ -20,8 +20,8 @@
             <option value="asistente">Asistente</option>
         </select>
     </div>
-    <!-- Boton para registrar -->
-     <input type="submit" value="Ingresar" class="btn btn-primary">
+    <!-- Boton para ingresar -->
+     <input type="submit" value="Ingresar" class="btn btn-primary" id="#">
 </form>
 
 <?php include("template/footer.php")?>

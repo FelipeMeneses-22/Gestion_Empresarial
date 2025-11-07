@@ -1,0 +1,18 @@
+h1 {
+  color: #47525e;
+}
+.logo-circle {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  background-color: white;
+}
+
+.fondo1 {
+  background-color: #f5f5dc;
+}
+
+.home {
+  font-size: 20px;
+  font-family: Arial, sans-serif;
+}
