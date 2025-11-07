@@ -37,3 +37,9 @@ footer a {
   font-size: 16px;
   cursor: pointer;
 }
+
+/* mensaje de alerta */
+
+.alert {
+  background-color: #f5f5dc;
+}

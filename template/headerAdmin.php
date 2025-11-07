@@ -26,8 +26,10 @@
                 </div>
             </div>
         </div>
+        <!-- Mensaje de bienvenida -->
+         <p class="text-center py-2">Bienvenido felipe tu rol es de administrador es decir que eres un super visitante!!</p>
 
-        <!-- Barra de navegación -->
+        <!-- Barra de navegación del administrador -->
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container-fluid justify-content-star">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -40,6 +42,7 @@
                         <li class="nav-item"><a class="nav-link" href="ingresar.php">Salir</a></li>
                         <select name="opciones" id="opciones">
                             <option href="usuarios.php">Opciones</option>
+                            <option href="usuarios.php"><a href="#">Administrador</a></option>
                             <option href="productos.php">Productos</option>
                             <option href="inventario.php">Inventario</option>
                             <option href="reportes.php">Reportes Financieros</option>
@@ -48,7 +51,5 @@
                 </div>
             </div>
         </nav>
-
-
     </header>
     

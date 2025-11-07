@@ -2,7 +2,7 @@
 $rol = $_POST['rol'];
 
 if ($rol == "admin") {
-    header("Location: template/admin/administrador.php");
+    header("Location: template/admin/homeAdmin.php");
 } elseif ($rol == "gerente") {
     header("Location: gerente.php");
 } elseif ($rol == "asistente") {
