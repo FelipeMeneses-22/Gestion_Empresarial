@@ -5,44 +5,46 @@ from fastapi.middleware.cors import CORSMiddleware
 
 app = FastAPI()
 
-# Permitir peticiones desde tu frontend
+# Permitir peticiones desde el frontend
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],  
+    allow_origins=["*"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
 )
 
 # ==========================
-#  MODELOS
+# MODELOS
 # ==========================
 
 class RegisterData(BaseModel):
     nombre: str
     email: str
-    pass: str
+    password: str
     rol: str
 
 class LoginData(BaseModel):
     email: str
-    pass: str
+    password: str
     rol: str
 
+
 # ==========================
-#  CONEXIÓN A LA BD
+# CONEXIÓN A MYSQL
 # ==========================
 
 def get_connection():
     return mysql.connector.connect(
         host="localhost",
-        user="root",          # <-- CAMBIA si tu usuario es diferente
-        password="",          # <-- CAMBIA tu contraseña de MySQL
+        user="root",
+        password="",
         database="gestion_empresarial"
     )
 
+
 # ==========================
-#  RUTA: REGISTRO
+# REGISTRO DE USUARIO
 # ==========================
 
 @app.post("/register")
@@ -52,10 +54,11 @@ def registrar_usuario(data: RegisterData):
         cursor = conn.cursor()
 
         sql = """
-            INSERT INTO usuarios (nombre, email, pass, rol)
-            VALUES (%s, %s, %s, %s)
+        INSERT INTO usuarios (nombre, email, password, rol)
+        VALUES (%s, %s, %s, %s)
         """
-        valores = (data.nombre, data.email, data.pass, data.rol)
+
+        valores = (data.nombre, data.email, data.password, data.rol)
 
         cursor.execute(sql, valores)
         conn.commit()
@@ -63,13 +66,20 @@ def registrar_usuario(data: RegisterData):
         cursor.close()
         conn.close()
 
-        return {"status": "ok", "mensaje": "Usuario registrado correctamente"}
+        return {
+            "status": "ok",
+            "mensaje": "Usuario registrado correctamente"
+        }
 
     except mysql.connector.Error as err:
-        return {"status": "error", "mensaje": str(err)}
+        return {
+            "status": "error",
+            "mensaje": str(err)
+        }
+
 
 # ==========================
-#  RUTA: LOGIN
+# LOGIN
 # ==========================
 
 @app.post("/login")
@@ -79,10 +89,11 @@ def login_usuario(data: LoginData):
         cursor = conn.cursor(dictionary=True)
 
         sql = """
-            SELECT * FROM usuarios
-            WHERE email = %s AND pass = %s AND rol = %s
+        SELECT * FROM usuarios
+        WHERE email = %s AND password = %s AND rol = %s
         """
-        valores = (data.email, data.pass, data.rol)
+
+        valores = (data.email, data.password, data.rol)
 
         cursor.execute(sql, valores)
         usuario = cursor.fetchone()
@@ -97,7 +108,13 @@ def login_usuario(data: LoginData):
                 "usuario": usuario
             }
         else:
-            return {"status": "error", "mensaje": "Credenciales incorrectas"}
+            return {
+                "status": "error",
+                "mensaje": "Credenciales incorrectas"
+            }
 
     except mysql.connector.Error as err:
-        return {"status": "error", "mensaje": str(err)}
+        return {
+            "status": "error",
+            "mensaje": str(err)
+        }
