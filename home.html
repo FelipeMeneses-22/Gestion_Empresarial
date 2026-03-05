@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Business Management</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body onload="cargarHome()">
+
+    <!-- HEADER -->
+    <header class="site-header">
+        <div class="header-inner">
+            <img src="img/buisness.png" alt="Logo" class="logo-img">
+            <h1 class="site-title">BUSINESS MANAGEMENT</h1>
+        </div>
+    </header>
+
+    <!-- TEXTO DE BIENVENIDA -->
+    <p id="mensajeRol" class="welcome-text"></p>
+
+    <!-- NAV STRIP -->
+    <nav class="nav-strip">
+        <div class="container nav-list">
+            <a href="home.html" class="nav-link">Inicio</a>
+            <a href="cambio_contrasena.html" class="nav-link">Cambio de contraseña</a>
+            <a href="#" class="nav-link" onclick="cerrarSesion()">Salir</a>
+
+            <!-- DROPDOWN DE OPCIONES -->
+            <select id="menuOpciones" onchange="irOpcion()" style="margin-left: auto;">
+                <option value="">Opciones</option>
+            </select>
+        </div>
+    </nav>
+
+    <!-- ALERTA -->
+    <div class="alerta" style="margin:20px 0; color: green; font-weight: bold;">
+        Inicio de sesión con éxito!!
+    </div>
+
+    <!-- MAIN -->
+    <main class="container">
+        <h2 class="big-title">Bienvenido</h2>
+        <p class="big-paragraph">
+            Esta es la aplicación para gestión de manera eficiente de los negocios.
+        </p>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="site-footer container">
+        <p>© Business Management</p>
+        <div class="footer-links">
+            <a href="#">Contacto</a>
+            <a href="#">Términos de uso</a>
+            <a href="#">Soporte</a>
+        </div>
+    </footer>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
