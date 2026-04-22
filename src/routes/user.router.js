@@ -1,0 +1,10 @@
+// src/routes/usuario.routes.js
+const express = require('express');
+const router = express.Router();
+const controller = require('../controllers/usuario.controller');
+
+router.get('/', controller.getAll);
+router.get('/:id', controller.getById);
+router.post('/', controller.create);
+
+module.exports = router;
