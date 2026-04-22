@@ -1,0 +1,184 @@
+/* Reset */
+body,
+html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  color: #334;
+  background: #ffffff;
+}
+
+/* Estructura general */
+.page-body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #fff;
+}
+
+/* HEADER */
+.site-header {
+  width: 100%;
+  padding-top: 16px;
+}
+
+/* Caja color beige del header */
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  background: #f4f2da; /* Color exacto del fondo beige */
+  padding: 22px 20px;
+  border-radius: 4px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.logo-img {
+  width: 140px;
+  height: auto;
+  border-radius: 50%;
+  background: #fff;
+  padding: 18px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.site-title {
+  font-family: "Georgia", serif;
+  font-size: 48px;
+  margin: 0;
+  line-height: 0.9;
+  color: #39424a;
+  text-align: center;
+  letter-spacing: 3px;
+}
+
+/* Texto “Hola Visitante” */
+.welcome-text {
+  margin-top: 8px;
+  margin-bottom: 0;
+  color: #555;
+  font-size: 18px;
+  text-align: center;
+}
+
+/* Barra de navegación */
+.nav-strip {
+  width: 100%;
+  background: transparent;
+  margin-top: 12px;
+  border-top: 2px solid #d2d0bd;
+  border-bottom: 2px solid #d2d0bd;
+  padding: 8px 0;
+}
+
+.nav-list .nav-link {
+  color: #333;
+  padding: 10px 18px;
+  font-size: 18px;
+}
+
+.nav-list .nav-link.active {
+  font-weight: 700;
+  color: #000;
+}
+
+/* Títulos grandes como la imagen */
+.big-title {
+  font-size: 44px;
+  color: #2f3b44;
+  font-weight: 700;
+  margin-top: 40px;
+  text-align: center;
+}
+
+.big-paragraph {
+  font-size: 24px;
+  color: #4b5960;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Formulario */
+.form-title {
+  font-size: 36px;
+  margin-bottom: 18px;
+  color: #3b4850;
+  text-align: center;
+}
+
+.form-control {
+  border-radius: 6px;
+  border: 2px solid #ccc;
+  padding: 10px;
+  font-size: 18px;
+}
+
+.btn-register {
+  background: #00aaff;
+  color: white;
+  border-radius: 6px;
+  padding: 12px;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.btn-register:hover {
+  background: #0088cc;
+}
+
+/* Footer */
+.site-footer {
+  margin-top: auto;
+  width: 100%;
+  padding-top: 28px;
+  padding-bottom: 28px;
+  background: #f4f4f4;
+  text-align: center;
+  color: #666;
+  border-top: 2px solid #ddd;
+}
+
+.footer-links a {
+  margin: 0 12px;
+  color: #2d3b44;
+  text-decoration: underline;
+  font-size: 16px;
+}
+
+/* Limites del contenedor */
+.container {
+  max-width: 1100px;
+}
+
+.nav-list {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .header-inner {
+    flex-direction: column;
+    padding: 16px;
+  }
+  .site-title {
+    font-size: 34px;
+  }
+  .logo-img {
+    width: 110px;
+    padding: 10px;
+  }
+
+  .big-title {
+    font-size: 32px;
+  }
+  .big-paragraph {
+    font-size: 18px;
+  }
+}
