@@ -5,6 +5,10 @@ from fastapi.middleware.cors import CORSMiddleware
 
 app = FastAPI()
 
+@app.get("/")
+def inicio():
+    return {"mensaje": "Servidor funcionando"}
+
 # Permitir peticiones desde el frontend
 app.add_middleware(
     CORSMiddleware,
@@ -20,14 +24,15 @@ app.add_middleware(
 
 class RegisterData(BaseModel):
     nombre: str
-    email: str
-    password: str
-    rol: str
+    correo: str   
+    contrasena: str 
+    rol: int
+
 
 class LoginData(BaseModel):
-    email: str
-    password: str
-    rol: str
+    correo: str
+    contrasena: str
+    rol: int
 
 
 # ==========================
@@ -39,14 +44,14 @@ def get_connection():
         host="localhost",
         user="root",
         password="",
-        database="gestion_empresarial"
+        database="proyecto_db" 
     )
+
 
 
 # ==========================
 # REGISTRO DE USUARIO
 # ==========================
-
 @app.post("/register")
 def registrar_usuario(data: RegisterData):
     try:
@@ -54,11 +59,11 @@ def registrar_usuario(data: RegisterData):
         cursor = conn.cursor()
 
         sql = """
-        INSERT INTO usuarios (nombre, email, password, rol)
+        INSERT INTO usuarios (nombre, correo, contrasena, rol)
         VALUES (%s, %s, %s, %s)
         """
 
-        valores = (data.nombre, data.email, data.password, data.rol)
+        valores = (data.nombre, data.correo, data.contrasena, data.rol)
 
         cursor.execute(sql, valores)
         conn.commit()
@@ -78,10 +83,10 @@ def registrar_usuario(data: RegisterData):
         }
 
 
+
 # ==========================
 # LOGIN
 # ==========================
-
 @app.post("/login")
 def login_usuario(data: LoginData):
     try:
@@ -90,10 +95,10 @@ def login_usuario(data: LoginData):
 
         sql = """
         SELECT * FROM usuarios
-        WHERE email = %s AND password = %s AND rol = %s
+        WHERE correo = %s AND contrasena = %s AND rol = %s
         """
 
-        valores = (data.email, data.password, data.rol)
+        valores = (data.correo, data.contrasena, data.rol)
 
         cursor.execute(sql, valores)
         usuario = cursor.fetchone()
@@ -118,3 +123,4 @@ def login_usuario(data: LoginData):
             "status": "error",
             "mensaje": str(err)
         }
+    
